@@ -1,1 +1,196 @@
-.kuu-rewards {}
+.kuu-rewards {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1em 0 3em;
+
+  h2 {
+    font-size: var(--font-up-2);
+    margin: 1.5em 0 0.5em;
+  }
+
+  &__title {
+    margin-bottom: 0.25em;
+  }
+
+  &__rules {
+    font-size: var(--font-up-1);
+  }
+
+  &__details {
+    color: var(--primary-high);
+
+    summary {
+      cursor: pointer;
+    }
+  }
+
+  &__remaining,
+  &__me {
+    margin-top: 1.5em;
+    padding: 1.25em;
+    border-radius: var(--d-border-radius-large);
+    background: var(--primary-very-low);
+    text-align: center;
+  }
+
+  &__remaining-label {
+    margin: 0;
+    color: var(--primary-high);
+  }
+
+  &__remaining-count {
+    margin: 0.25em 0 0;
+    font-size: var(--font-up-2);
+
+    strong {
+      font-size: var(--font-up-6);
+      color: var(--tertiary);
+    }
+  }
+
+  &__sold-out {
+    margin: 0;
+    font-size: var(--font-up-2);
+    font-weight: bold;
+  }
+
+  &__eligible-message {
+    font-size: var(--font-up-3);
+    font-weight: bold;
+  }
+
+  &__me {
+    h2:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__progress,
+  &__my-claims,
+  &__winner-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  &__progress-item,
+  &__my-claim,
+  &__winner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25em 0.75em;
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--primary-low);
+  }
+
+  &__progress-item .kuu-rewards-post-link,
+  &__my-claim .kuu-rewards-post-link,
+  &__winner .kuu-rewards-post-link {
+    flex: 1 1 12em;
+    min-width: 0;
+  }
+
+  &__progress-bar {
+    flex: 0 1 8em;
+    accent-color: var(--tertiary);
+  }
+
+  &__progress-count,
+  &__my-claim-date,
+  &__winner-date {
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+
+  &__my-claim-status {
+    font-size: var(--font-down-1);
+  }
+
+  &__winner-user {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    font-weight: bold;
+  }
+
+  &__empty {
+    color: var(--primary-medium);
+  }
+}
+
+.kuu-rewards-post-link {
+  overflow-wrap: anywhere;
+
+  &__floor {
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+
+  &.--unavailable {
+    color: var(--primary-medium);
+  }
+}
+
+.kuu-rewards-claim-form {
+  &__likes {
+    margin-left: 0.5em;
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+}
+
+.kuu-rewards-qr-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.5em;
+
+  &__preview {
+    max-width: 10em;
+    max-height: 10em;
+    border: 1px solid var(--primary-low);
+  }
+
+  &__error {
+    width: 100%;
+    margin: 0;
+    color: var(--danger);
+  }
+}
+
+.kuu-rewards-admin {
+  &__actions {
+    margin-bottom: 1em;
+  }
+
+  &__hint,
+  &__likes,
+  &__empty {
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+
+  &__row.--voided {
+    opacity: 0.6;
+  }
+
+  &__flag {
+    margin-left: 0.5em;
+    color: var(--danger);
+  }
+
+  &__account {
+    font-family: var(--d-font-family--monospace);
+    overflow-wrap: anywhere;
+    user-select: all;
+  }
+
+  &__qr-code img {
+    display: block;
+    max-width: 6em;
+    max-height: 6em;
+    margin-top: 0.25em;
+  }
+}

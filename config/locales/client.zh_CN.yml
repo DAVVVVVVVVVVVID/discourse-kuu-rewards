@@ -4,3 +4,88 @@ zh_CN:
       site_settings:
         categories:
           discourse_kuu_rewards: "KUU 点赞奖励"
+  js:
+    kuu_rewards:
+      post_number: "#%{number} 楼"
+      post_unavailable: "帖子已不可见"
+      likes:
+        other: "%{count} 赞"
+      payment_methods:
+        paypay: "PayPay"
+        wechat: "微信"
+      page:
+        title: "点赞奖励"
+        rules: "%{start}起发的帖子，单个帖子满 %{threshold} 赞，可以领 %{amount}。全站共 %{total} 份，每人最多 %{limit} 份，领完即止。"
+        details_title: "详细规则"
+        details:
+          posts: "公开分类里的帖子都参加，一楼、回复、评分短评都算。"
+          likes: "只算这个帖子自己收到的赞，回复它的帖子、同一话题的其他楼层不算。"
+          excluded: "二手市场的帖子、鲸仔发的帖子、已删除或被隐藏的帖子不参加。"
+          claim: "一个帖子只能领一次。提交收款信息就算领奖完成，管理员之后手动转账。"
+          void: "发现刷赞等情况时，管理员会作废这份奖励，名额退回。"
+        remaining_label: "剩余"
+        total:
+          other: "%{count} 份"
+        sold_out: "奖励已全部领完，谢谢大家！"
+      me:
+        eligible: "🎉 你有资格领奖！"
+        claim: "领奖"
+        user_limit:
+          other: "你已经领满 %{count} 份了，谢谢参与！"
+        progress_title: "我的帖子"
+        progress:
+          other: "%{count} / %{threshold} 赞"
+        no_posts: "活动开始后你还没有发参加活动的帖子。"
+        claims_title: "我的领奖"
+        status:
+          pending: "等待转账"
+          transferred: "已转账"
+          voided: "已作废：%{reason}"
+        login_hint: "登录后查看你的帖子进度，达标后在这里领奖。"
+      winners:
+        title: "领奖名单"
+        empty: "还没有人领奖。"
+      claim:
+        title: "领奖"
+        post: "领奖的帖子"
+        payment_method: "收款方式"
+        paypay_id: "PayPay ID"
+        wechat_id: "微信号"
+        paypay_qr_code: "PayPay 收款码"
+        wechat_qr_code: "微信收款码"
+        qr_code_help: "PNG、JPG 或 WebP 图片，5 MB 以内。"
+        qr_code_preview: "收款码预览"
+        qr_code_wrong_type: "请选择 PNG、JPG 或 WebP 图片。"
+        qr_code_too_large: "图片超过 5 MB 了，请换一张小一点的。"
+        remove_qr_code: "换一张"
+        agreement: "我知道领奖后我的用户名和获奖帖子会公开显示在本页；收款信息只用于发放这次奖励，只有管理员能看到，活动结束后删除。"
+        submit: "提交并领奖"
+        success: "领奖成功！管理员会尽快转账。"
+      notifications:
+        claimed_title: "有人领奖"
+        voided_title: "领奖已作废"
+      admin:
+        title: "点赞奖励"
+        claims: "领奖记录"
+        empty: "还没有人领奖。"
+        claimed_at: "领奖时间"
+        user: "领奖人"
+        post: "帖子"
+        payment: "收款信息"
+        status: "状态"
+        likes: "领奖时 %{at_claim} 赞，现在 %{now} 赞"
+        deleted: "已删除"
+        hidden: "已隐藏"
+        qr_code: "收款码"
+        pending: "未转账"
+        transferred: "已转账"
+        voided: "已作废（%{username}）：%{reason}"
+        mark_transferred: "已转账"
+        undo_transferred: "取消已转账"
+        void: "作废"
+        void_title: "作废 %{username} 的奖励"
+        void_explanation: "作废后名额退回，领奖人从公开名单上去掉，并收到站内通知。这个帖子不能再领奖。作废不能撤销。"
+        void_reason: "原因（领奖人能看到）"
+        clear: "清除所有收款信息"
+        clear_hint: "活动结束、全部转账后再点。会清空所有收款账号和收款码图片，领奖记录保留。"
+        clear_confirm: "确定清除所有收款信息吗？清除后无法恢复。"

@@ -35,6 +35,7 @@ RSpec.describe DiscourseKuuRewards::ClaimsController do
         }.by(1)
 
         expect(response.status).to eq(201)
+        expect(response.parsed_body["id"]).to eq(DiscourseKuuRewards::Claim.last.id)
       end
 
       it "accepts a QR code image upload" do

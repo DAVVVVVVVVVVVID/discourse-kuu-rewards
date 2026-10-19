@@ -4,3 +4,92 @@ en:
       site_settings:
         categories:
           discourse_kuu_rewards: "KUU like rewards"
+  js:
+    kuu_rewards:
+      post_number: "#%{number}"
+      post_unavailable: "Post no longer available"
+      likes:
+        one: "%{count} like"
+        other: "%{count} likes"
+      payment_methods:
+        paypay: "PayPay"
+        wechat: "WeChat"
+      page:
+        title: "Like rewards"
+        rules: "Posts created from %{start} on: a single post with %{threshold} likes earns %{amount}. %{total} rewards in total, up to %{limit} per person, while they last."
+        details_title: "Details"
+        details:
+          posts: "Posts in public categories take part: first posts, replies and rating reviews."
+          likes: "Only the post's own likes count, not replies to it or other posts in the topic."
+          excluded: "Marketplace posts, posts by the AI account, and deleted or hidden posts don't take part."
+          claim: "Each post can be claimed once. Submitting your payment details completes the claim; an admin transfers the money later."
+          void: "If we find like farming or similar, an admin voids the reward and it goes back to the pool."
+        remaining_label: "Remaining"
+        total:
+          one: "%{count} reward"
+          other: "%{count} rewards"
+        sold_out: "All rewards have been claimed. Thank you all!"
+      me:
+        eligible: "🎉 You can claim a reward!"
+        claim: "Claim"
+        user_limit:
+          one: "You have claimed %{count} reward, the maximum. Thanks for taking part!"
+          other: "You have claimed %{count} rewards, the maximum. Thanks for taking part!"
+        progress_title: "My posts"
+        progress:
+          one: "%{count} / %{threshold} likes"
+          other: "%{count} / %{threshold} likes"
+        no_posts: "You haven't created any eligible posts since the event started."
+        claims_title: "My rewards"
+        status:
+          pending: "Awaiting transfer"
+          transferred: "Transferred"
+          voided: "Voided: %{reason}"
+        login_hint: "Log in to see your progress and claim rewards here."
+      winners:
+        title: "Winners"
+        empty: "Nobody has claimed a reward yet."
+      claim:
+        title: "Claim a reward"
+        post: "Post"
+        payment_method: "Payment method"
+        paypay_id: "PayPay ID"
+        wechat_id: "WeChat ID"
+        paypay_qr_code: "PayPay QR code"
+        wechat_qr_code: "WeChat QR code"
+        qr_code_help: "PNG, JPG or WebP image, up to 5 MB."
+        qr_code_preview: "QR code preview"
+        qr_code_wrong_type: "Please choose a PNG, JPG or WebP image."
+        qr_code_too_large: "The image is larger than 5 MB. Please choose a smaller one."
+        remove_qr_code: "Choose another"
+        agreement: "I understand that my username and winning post will be shown publicly on this page, and that my payment details are only used for this reward, are visible only to admins, and will be deleted after the event."
+        submit: "Submit and claim"
+        success: "Reward claimed! An admin will transfer it soon."
+      notifications:
+        claimed_title: "Reward claimed"
+        voided_title: "Reward voided"
+      admin:
+        title: "Like rewards"
+        claims: "Claims"
+        empty: "Nobody has claimed a reward yet."
+        claimed_at: "Claimed"
+        user: "User"
+        post: "Post"
+        payment: "Payment details"
+        status: "Status"
+        likes: "%{at_claim} likes when claimed, %{now} now"
+        deleted: "Deleted"
+        hidden: "Hidden"
+        qr_code: "QR code"
+        pending: "Not transferred"
+        transferred: "Transferred"
+        voided: "Voided (%{username}): %{reason}"
+        mark_transferred: "Transferred"
+        undo_transferred: "Undo transferred"
+        void: "Void"
+        void_title: "Void %{username}'s reward"
+        void_explanation: "The reward goes back to the pool, the user is removed from the public list and gets a notification. The post can't be claimed again. This can't be undone."
+        void_reason: "Reason (shown to the user)"
+        clear: "Clear all payment details"
+        clear_hint: "Use this after the event, once everything is transferred. Clears all payment accounts and QR codes; the claims themselves are kept."
+        clear_confirm: "Clear all payment details? This can't be undone."

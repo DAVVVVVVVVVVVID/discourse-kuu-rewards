@@ -10,7 +10,7 @@ module DiscourseKuuRewards
 
     def create
       Claim::Create.call(service_params) do
-        on_success { head :created }
+        on_success { |claim:| render json: { id: claim.id }, status: :created }
         on_failed_contract do |contract|
           render(
             json: failed_json.merge(errors: contract.errors.full_messages),
