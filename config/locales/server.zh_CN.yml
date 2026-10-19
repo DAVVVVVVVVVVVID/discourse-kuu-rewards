@@ -1,3 +1,19 @@
 zh_CN:
   site_settings:
     kuu_rewards_enabled: "启用 KUU 点赞奖励（/rewards 页面）。"
+    kuu_rewards_start_at: "活动开始时间，这之后发的帖子才参加。必须带时区，例如「2026-10-20 00:00 +09:00」。"
+    kuu_rewards_total: "全站一共几份奖励，领完即止。"
+    kuu_rewards_per_user_limit: "每人最多领几份。"
+    kuu_rewards_like_threshold: "单个帖子满多少赞可以领奖。"
+    kuu_rewards_amount: "每份奖励的金额，显示在奖励页上。"
+    kuu_rewards_excluded_categories: "不参加活动的分类（二手市场）。只有匿名用户能看的分类参加。"
+    kuu_rewards_excluded_usernames: "不参加活动的用户（鲸仔）。"
+    kuu_rewards_notify_username: "有人领奖时，给这个用户发站内通知。"
+  kuu_rewards:
+    errors:
+      invalid_start_at: "请填写带时区的时间，例如「2026-10-20 00:00 +09:00」。"
+      not_eligible: "这个帖子现在不能领奖，请刷新页面看看。"
+      sold_out: "奖励已全部领完。"
+      user_limit: "你已经领满了。"
+    notifications:
+      voided_label: "领奖已作废"

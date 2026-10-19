@@ -2,3 +2,29 @@ discourse_kuu_rewards:
   kuu_rewards_enabled:
     default: false
     client: true
+  kuu_rewards_start_at:
+    default: "2026-10-20 00:00 +09:00"
+    validator: "DiscourseKuuRewards::StartAtValidator"
+  kuu_rewards_total:
+    default: 20
+    min: 1
+    max: 1000
+  kuu_rewards_per_user_limit:
+    default: 5
+    min: 1
+    max: 1000
+  kuu_rewards_like_threshold:
+    default: 20
+    min: 1
+    max: 10000
+  kuu_rewards_amount:
+    default: "1000 日元"
+  kuu_rewards_excluded_categories:
+    type: category_list
+    default: "8"
+  kuu_rewards_excluded_usernames:
+    type: list
+    list_type: compact
+    default: "鲸仔-AI智能体"
+  kuu_rewards_notify_username:
+    default: "DAVVVVVVVVVVVID"

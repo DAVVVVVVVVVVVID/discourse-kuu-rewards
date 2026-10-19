@@ -1,3 +1,19 @@
 en:
   site_settings:
     kuu_rewards_enabled: "Enable KUU like rewards (the /rewards page)."
+    kuu_rewards_start_at: "Only posts created after this time take part. Must include a time zone, e.g. \"2026-10-20 00:00 +09:00\"."
+    kuu_rewards_total: "Total number of rewards. The event ends when they are all claimed."
+    kuu_rewards_per_user_limit: "Maximum number of rewards per user."
+    kuu_rewards_like_threshold: "Number of likes a single post needs to qualify."
+    kuu_rewards_amount: "Amount of each reward, shown on the rewards page."
+    kuu_rewards_excluded_categories: "Categories that don't take part (the marketplace). Only categories visible to anonymous users take part."
+    kuu_rewards_excluded_usernames: "Users who don't take part (the AI account)."
+    kuu_rewards_notify_username: "User who gets a notification when someone claims a reward."
+  kuu_rewards:
+    errors:
+      invalid_start_at: "Enter a time with a time zone, e.g. \"2026-10-20 00:00 +09:00\"."
+      not_eligible: "This post can't be claimed right now. Please refresh the page."
+      sold_out: "All rewards have been claimed."
+      user_limit: "You have reached the maximum number of rewards."
+    notifications:
+      voided_label: "Reward voided"
